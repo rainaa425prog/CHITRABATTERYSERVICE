@@ -35,6 +35,44 @@ footer{background:#101c32;color:white;padding:25px 18px;line-height:1.8}
 footer a{color:#ffc928}
 @media(max-width:360px){.products{grid-template-columns:1fr}}
 </style>
+/* Mobile-friendly improvements */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a, button {
+  touch-action: manipulation;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  a, button {
+    max-width: 100%;
+  }
+}
+</style>
 </head>
 <body>
 <header>
