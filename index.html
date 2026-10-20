@@ -2,148 +2,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101c32">
-  <title>Chitra BatteryService | Battery Store</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #182338;
-    }
-    header {
-      background: #101c32;
-      color: white;
-      padding: 22px 18px;
-    }
-    .brand { font-size: 23px; font-weight: 800; }
-    .brand span { color: #ffc928; }
-    header p { margin-bottom: 0; color: #d3dbea; }
-    nav {
-      display: flex;
-      gap: 20px;
-      padding: 15px 18px;
-      background: white;
-      overflow-x: auto;
-    }
-    nav a { color: #182338; text-decoration: none; font-weight: bold; }
-    .hero {
-      padding: 42px 22px;
-      background: #172b49;
-      color: white;
-    }
-    .hero h1 { font-size: 34px; line-height: 1.15; }
-    .hero p { line-height: 1.7; color: #e0e7f2; }
-    .button {
-      display: inline-block;
-      padding: 13px 18px;
-      margin-top: 12px;
-      background: #ffc928;
-      color: #172033;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 7px;
-    }
-    main { padding: 25px 18px; }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .product {
-      background: white;
-      border-radius: 12px;
-      padding: 16px 12px;
-      box-shadow: 0 3px 15px #172b4910;
-    }
-    .battery { font-size: 45px; }
-    .product h3 { font-size: 17px; }
-    .product p { color: #68758a; font-size: 13px; line-height: 1.5; }
-    .product a {
-      display: block;
-      text-align: center;
-      background: #172b49;
-      color: white;
-      padding: 11px 5px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 13px;
-    }
-    .note { color: #68758a; font-size: 13px; line-height: 1.6; }
-    footer {
-      background: #101c32;
-      color: white;
-      padding: 25px 18px;
-      line-height: 1.8;
-    }
-    footer a { color: #ffc928; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101c32">
+<title>Chitra Battery Service | Exide & Amaron</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#182338}
+header{background:#101c32;color:white;padding:22px 18px}
+.brand{font-size:23px;font-weight:800}
+.brand span{color:#ffc928}
+header p{color:#d3dbea;margin-bottom:0}
+nav{display:flex;gap:20px;padding:15px 18px;background:white;overflow:auto}
+nav a{color:#182338;text-decoration:none;font-weight:bold;white-space:nowrap}
+.hero{padding:40px 22px;background:#172b49;color:white}
+.hero h1{font-size:34px}
+.hero p{line-height:1.7;color:#e0e7f2}
+.button{display:inline-block;padding:13px 18px;margin-top:12px;background:#ffc928;color:#172033;font-weight:bold;text-decoration:none;border-radius:7px}
+main{padding:25px 18px}
+.brands{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.brands span{background:white;border:1px solid #ddd;padding:10px 14px;border-radius:20px;font-weight:bold}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.product{background:white;border-radius:12px;overflow:hidden;box-shadow:0 3px 15px #172b4910}
+.product img{width:100%;height:125px;object-fit:cover;display:block;background:#e7ebf2}
+.content{padding:12px}
+.product h3{font-size:17px}
+.product p{color:#68758a;font-size:13px;line-height:1.5}
+.price{font-weight:bold;color:#172b49!important}
+.product a{display:block;text-align:center;background:#16834a;color:white;padding:11px 5px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:12px}
+.note{font-size:13px;color:#68758a;line-height:1.6}
+footer{background:#101c32;color:white;padding:25px 18px;line-height:1.8}
+footer a{color:#ffc928}
+@media(max-width:360px){.products{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="brand">CHITRA <span>BATTERY</span>SERVICE</div>
-    <p>Your battery needs, our priority.</p>
-  </header>
+<header>
+<div class="brand">CHITRA <span>BATTERY</span>SERVICE</div>
+<p>Your battery needs, our priority.</p>
+</header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#shop">Shop Batteries</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#shop">Shop Batteries</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <section class="hero" id="home">
-    <h1>Power Your Journey.</h1>
-    <p>Looking for the right battery? Explore our battery range and contact us for product availability and pricing.</p>
-    <a class="button" href="#shop">Explore Products ↓</a>
-  </section>
+<section class="hero" id="home">
+<h1>Power Your Journey.</h1>
+<p>Quality battery options from EXIDE and AMARON. Contact us to check availability and prices.</p>
+<a class="button" href="#shop">Explore Products ↓</a>
+</section>
 
-  <main id="shop">
-    <h2>Explore Our Products</h2>
-    <p>Find a battery that suits your needs.</p>
+<main id="shop">
+<h2>Explore Our Batteries</h2>
+<p>Find the right battery for your needs.</p>
+<div class="brands">
+<span>EXIDE Batteries</span>
+<span>AMARON Batteries</span>
+</div>
 
-    <div class="products">
-      <article class="product">
-        <div class="battery">🔋</div>
-        <h3>Car Batteries</h3>
-        <p>Battery options for your vehicle. Ask us about compatibility.</p>
-        <a href="#contact">Enquire Now</a>
-      </article>
+<div class="products">
+<article class="product">
+<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=600&q=80" alt="Car engine">
+<div class="content">
+<h3>Car Batteries</h3>
+<p>EXIDE and AMARON options for cars. Share your car model to check compatibility.</p>
+<p class="price">Contact for Price</p>
+<a href="https://wa.me/919952938508?text=Hi%20Chitra%20Battery%20Service%2C%20I%20need%20a%20car%20battery.%20Please%20share%20availability%20and%20price." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+</div>
+</article>
 
-      <article class="product">
-        <div class="battery">🚗</div>
-        <h3>Two-Wheeler Batteries</h3>
-        <p>Explore available batteries for bikes and scooters.</p>
-        <a href="#contact">Enquire Now</a>
-      </article>
+<article class="product">
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Motorcycle">
+<div class="content">
+<h3>Two-Wheeler Batteries</h3>
+<p>Battery options for bikes and scooters. Ask us about your vehicle model.</p>
+<p class="price">Contact for Price</p>
+<a href="https://wa.me/919952938508?text=Hi%20Chitra%20Battery%20Service%2C%20I%20need%20a%20two-wheeler%20battery.%20Please%20share%20availability%20and%20price." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+</div>
+</article>
 
-      <article class="product">
-        <div class="battery">⚡</div>
-        <h3>Inverter Batteries</h3>
-        <p>Ask us about backup power solutions for your home.</p>
-        <a href="#contact">Enquire Now</a>
-      </article>
+<article class="product">
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=600&q=80" alt="Electrical equipment">
+<div class="content">
+<h3>Inverter Batteries</h3>
+<p>Ask us about home backup batteries and available options.</p>
+<p class="price">Contact for Price</p>
+<a href="https://wa.me/919952938508?text=Hi%20Chitra%20Battery%20Service%2C%20I%20need%20an%20inverter%20battery.%20Please%20share%20availability%20and%20price." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+</div>
+</article>
 
-      <article class="product">
-        <div class="battery">🔌</div>
-        <h3>Other Batteries</h3>
-        <p>Contact us for other battery types and availability.</p>
-        <a href="#contact">Enquire Now</a>
-      </article>
-    </div>
+<article class="product">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80" alt="Electrical equipment">
+<div class="content">
+<h3>UPS Batteries</h3>
+<p>Ask us about UPS battery options for your equipment.</p>
+<p class="price">Contact for Price</p>
+<a href="https://wa.me/919952938508?text=Hi%20Chitra%20Battery%20Service%2C%20I%20need%20a%20UPS%20battery.%20Please%20share%20availability%20and%20price." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+</div>
+</article>
+</div>
 
-    <p class="note">Product categories are examples. Confirm the products you sell before publishing your store.</p>
-  </main>
+<p class="note">Photos are illustrative. Please confirm actual model, stock, warranty and price with our shop.</p>
+</main>
 
-  <footer id="contact">
-    <h2>Contact Chitra BatteryService</h2>
-    <p>Need help choosing a battery? Contact our team for product details and prices.</p>
-    <p>Phone / WhatsApp: Add your business number before publishing.</p>
-    <p>Address: Add your shop address.</p>
-    <p>© 2026 Chitra BatteryService</p>
-  </footer>
+<footer id="contact">
+<h2>Contact Chitra Battery Service</h2>
+<p>Brands: EXIDE and AMARON</p>
+<p>Phone / WhatsApp:
+<a href="https://wa.me/919952938508" target="_blank" rel="noopener">+91 99529 38508</a></p>
+<p>For shop location, product availability and prices, contact us on WhatsApp.</p>
+<a class="button" href="https://wa.me/919952938508?text=Hi%20Chitra%20Battery%20Service%2C%20I%20would%20like%20to%20enquire%20about%20batteries." target="_blank" rel="noopener">Chat on WhatsApp</a>
+<p>© 2026 Chitra Battery Service</p>
+</footer>
 </body>
 </html>
