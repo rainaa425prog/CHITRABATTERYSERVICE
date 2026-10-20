@@ -72,6 +72,75 @@ a, button {
     max-width: 100%;
   }
 }
+
+/* Premium design upgrade */
+header {
+  padding: 28px 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+.brand {
+  letter-spacing: 0.5px;
+}
+
+nav {
+  box-shadow: 0 4px 14px rgba(16,28,50,0.08);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero {
+  padding: 60px 24px;
+  background: linear-gradient(135deg, #101c32, #203b60);
+}
+
+.hero h1 {
+  letter-spacing: -0.5px;
+}
+
+.button {
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.product {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e9f0;
+  box-shadow: 0 6px 22px rgba(16,28,50,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product img {
+  object-fit: cover;
+}
+
+.product h3 {
+  color: #101c32;
+  font-weight: 700;
+}
+
+.brands span {
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(16,28,50,0.06);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 42px 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .product {
+    margin-bottom: 12px;
+  }
+}
 </style>
 </head>
 <body>
